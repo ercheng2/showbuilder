@@ -1,0 +1,69 @@
+/**
+ * ShowBuilder - 思源黑体字体声明
+ * Source Han Sans SC (思源黑体)
+ * 支持国产系统浏览器离线运行
+ */
+
+/* ===== 思源黑体 Web Font ===== */
+@font-face {
+  font-family: 'Source Han Sans SC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Source Han Sans SC Light'),
+       local('Source Han Sans Light'),
+       local('思源黑体 Light'),
+       local('Noto Sans CJK SC Light'),
+       local('Noto Sans SC Light'),
+       url('./SourceHanSansSC-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Source Han Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Han Sans SC'),
+       local('Source Han Sans'),
+       local('思源黑体'),
+       local('Noto Sans CJK SC'),
+       local('Noto Sans SC'),
+       url('./SourceHanSansSC-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Source Han Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Source Han Sans SC Medium'),
+       local('Source Han Sans Medium'),
+       local('思源黑体 Medium'),
+       local('Noto Sans CJK SC Medium'),
+       local('Noto Sans SC Medium'),
+       url('./SourceHanSansSC-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Source Han Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Han Sans SC Bold'),
+       local('Source Han Sans Bold'),
+       local('思源黑体 Bold'),
+       local('Noto Sans CJK SC Bold'),
+       local('Noto Sans SC Bold'),
+       url('./SourceHanSansSC-Bold.otf') format('opentype');
+}
+
+/* ===== 全局字体回退方案 ===== */
+:root {
+  --sb-font-family: 'Source Han Sans SC', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+  --sb-font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', monospace;
+}
+
+/* 国产系统字体回退 */
+.sb-platform-domestic {
+  --sb-font-family: 'Noto Sans SC', 'WenQuanYi Micro Hei', 'Droid Sans Fallback', sans-serif;
+}
